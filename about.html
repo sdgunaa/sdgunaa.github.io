@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guna-sd | About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gunasekar, Guna-sd, sd.gunaseker, s.d.gunaseker, guna, gunaseker" />
+    <meta name="description" content="Know about Gunasekar, his skills, and passion for coding.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="image4">
+    <div class="page">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbutton nav-link">More &#9660;</a>
+                    <div class="dropdown-menu">
+                        <a href="learn.html" class="nav-link">temp</a>
+                        <a href="cv.html" class="nav-link">Resume(cv)</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="about">
+        <img src="assets/me.png" alt="Guna-sd">
+        <h2>Gunasekar.sd</h2>
+        <h3>Programmer | AI Enthusiast | Pentration Tester | Web Developer | Open Source Contributor | </h3>
+            <hr>
+            <div class="abt">
+        Hello, I'm Gunasekar, a passionate and dedicated individual in the field of technology. I'm currently pursuing my
+        studies in Computer Science Engineering at Panimalar Engineering College near Chennai. My journey in the world
+        of coding and technology has been an exciting one, filled with curiosity and a desire to learn.
+            </div>
+            <p class="abt">
+                My interests span across various domains, including programming, web development, artificial intelligence,
+                and cybersecurity. I love exploring new technologies and frameworks, always eager to stay updated with the
+                latest trends in the fast-paced tech industry.<span id="dots">...</span>
+                <span id="more"> Apart from coding, I enjoy contributing to open-source projects and engaging with the tech community. 
+                    I believe in the power of collaboration and sharing knowledge to foster innovation.
+                    <span id="skills">...</span>
+                    <span id="last">
+                        free to explore my portfolio to learn more about the projects I've worked on and the skills I've acquired.
+                        If you have any exciting projects or opportunities, I'm always open to new challenges and collaborations.
+                    </span>
+                </span>
+            </p>
+            <button onclick="myFunction()" id="btn" class="read">Read more</button>
+            <script>
+                function myFunction() {
+                  var dots = document.getElementById("dots");
+                  var moreText = document.getElementById("more");
+                  var btnText = document.getElementById("btn");
+                
+                  if (dots.style.display === "none") {
+                    dots.style.display = "inline-block";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                  } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline-block";
+                  }
+                }
+                </script>
+    </div>
+</body>
+
+</html>
