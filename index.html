@@ -1,47 +1,552 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-bs-theme="dark">
 <head>
-    <title>Guna-sd | Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="gunasekar, Guna-sd, sd.gunaseker, s.d.gunaseker, guna, gunaseker" />
-    <meta name="description" content="Hello, I'm Gunasekar. Explore my portfolio to discover my skills, projects, and passion...">
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts/script.js"></script>
+    <meta name="description" content="Gunasekar - Computer Science Engineer | AI & Compiler Enthusiast">
+    <title>Gunasekar | Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+<body>
+    <!-- Background Pattern -->
+    <div class="background-pattern"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="fw-bold">G</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <button id="theme-toggle" class="btn btn-outline-light btn-sm" aria-label="Toggle dark/light theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<body class="image0">
-    <div class="page">
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="blogs.html" class="nav-link">Blogs</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbutton nav-link">More &#9660;</a>
-                    <div class="dropdown-menu">
-                        <a href="learn.html" class="nav-link">temp</a>
-                        <a href="cv.html" class="nav-link">Resume(cv)</a>
-                        <a href="contact.html" class="nav-link">Contact</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 hero-content">
+                    <h1 class="display-1 fw-bold animate-on-scroll" data-animation="fade-up">Gunasekar</h1>
+                    <h2 class="mb-4 animate-on-scroll" data-animation="fade-up" data-delay="200">Computer Science Engineer | AI & Compiler Enthusiast</h2>
+                    <p class="lead mb-5 animate-on-scroll" data-animation="fade-up" data-delay="400">Building Intelligent Systems with AI & Compiler Engineering</p>
+                    <div class="animate-on-scroll" data-animation="fade-up" data-delay="600">
+                        <a href="#projects" class="btn btn-primary me-3">Explore My Work</a>
+                        <a href="#" class="btn btn-outline-light" id="download-resume">Download Resume</a>
                     </div>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="content">
-        <h1>Hey there! I'm <span>Gunasekar...</span></h1>
-        <p>
-            A curious mind with a thirst for knowledge and a passion for building things.
-            My playground? The ever-expanding world of code,
-            where I get to explore the intricate dance between logic and creativity.
-            Finding joy in each line of code I craft.
-        </p>
-        <a href="blogs.html" class="button">Get Started</a>
-    </div>
-    <footer>
-        <p>&copy; 2024 Guna-sd. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="animate-on-scroll" data-animation="fade-up">About Me</h2>
+                <div class="underline animate-on-scroll" data-animation="width-expand" data-delay="200"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll" data-animation="fade-right">
+                    <div class="about-content">
+                        <p class="lead">I am Gunasekar, a passionate Computer Science Engineer with expertise in system programming, compiler development, deep learning, and GPU computing.</p>
+                        <p>With a strong foundation in both theoretical computer science and practical engineering, I specialize in building efficient, scalable systems that leverage the power of modern AI techniques and low-level optimization.</p>
+                        <p>My work spans from developing compiler optimizations for GPU compute to implementing deep learning models for real-world applications. I believe in pushing the boundaries of technology to create intelligent systems that can solve complex problems efficiently.</p>
+                        <div class="d-flex mt-4">
+                            <a href="https://github.com/sdgunaa" target="_blank" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sdgunaa/" target="_blank" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/sdgunaa" target="_blank" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://medium.com/@sdgunaa" target="_blank" class="social-icon">
+                                <i class="fab fa-medium-m"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll" data-animation="fade-left">
+                    <div class="about-stats">
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <div class="stat-box">
+                                    <h3>2+</h3>
+                                    <p>Years Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-box">
+                                    <h3>5+</h3>
+                                    <p>Projects</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="stat-box">
+                                    <h3>5+</h3>
+                                    <p>Tech Stack</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-light-dark">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="animate-on-scroll" data-animation="fade-up">Skills & Expertise</h2>
+                <div class="underline animate-on-scroll" data-animation="width-expand" data-delay="200"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll" data-animation="fade-up">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Artificial Intelligence</h3>
+                        <div class="skill-progress">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>65%</span>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Deep Learning</li>
+                            <li>Neural Networks</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll" data-animation="fade-up" data-delay="200">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Compiler Engineering</h3>
+                        <div class="skill-progress">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>60%</span>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Code Optimization</li>
+                            <li>MLIR</li>
+                            <li>LLVM IR</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll" data-animation="fade-up" data-delay="400">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>GPU Computing</h3>
+                        <div class="skill-progress">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>65%</span>
+                        </div>
+                        <ul class="skill-list">
+                            <li>CUDA</li>
+                            <li>PTX</li>
+                            <li>Parallel Algorithms</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll" data-animation="fade-up" data-delay="200">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>System Programming</h3>
+                        <div class="skill-progress">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>45%</span>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Operating Systems</li>
+                            <li>Memory Management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll" data-animation="fade-up" data-delay="400">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                        <div class="skill-progress">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>75%</span>
+                        </div>
+                        <ul class="skill-list">
+                            <li>C/C++</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>Mojo</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll" data-animation="fade-up" data-delay="600">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Software Architecture</h3>
+                        <div class="skill-progress">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span>88%</span>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Distributed Systems</li>
+                            <li>Microservices</li>
+                            <li>Design Patterns</li>
+                            <li>System Design</li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="animate-on-scroll" data-animation="fade-up">Featured Projects</h2>
+                <div class="underline animate-on-scroll" data-animation="width-expand" data-delay="200"></div>
+            </div>
+            <div class="project-filters animate-on-scroll" data-animation="fade-up" data-delay="300">
+                <button class="btn btn-filter active" data-filter="all">All</button>
+                <button class="btn btn-filter" data-filter="ai">AI</button>
+                <button class="btn btn-filter" data-filter="compiler">Compiler</button>
+                <button class="btn btn-filter" data-filter="gpu">GPU</button>
+                <button class="btn btn-filter" data-filter="system">System</button>
+            </div>
+            <div class="row project-grid">
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="ai">
+                    <div class="project-card animate-on-scroll" data-animation="fade-up">
+                        <div class="project-image">
+                            <div class="project-placeholder bg-dark">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-category">AI / Deep Learning</span>
+                            <h3>Neural Compiler Optimization</h3>
+                            <p>Using deep reinforcement learning to automatically optimize compiler intermediate representations for performance.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="compiler">
+                    <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="200">
+                        <div class="project-image">
+                            <div class="project-placeholder bg-dark">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-category">Compiler Engineering</span>
+                            <h3>LLVM-based JIT Compiler</h3>
+                            <p>A just-in-time compiler framework based on LLVM for dynamically compiled languages with optimizations.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="gpu">
+                    <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="400">
+                        <div class="project-image">
+                            <div class="project-placeholder bg-dark">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-category">GPU Computing</span>
+                            <h3>GPU Accelerated Ray Tracer</h3>
+                            <p>Real-time ray tracing engine accelerated using CUDA for photorealistic rendering with path tracing.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="system">
+                    <div class="project-card animate-on-scroll" data-animation="fade-up">
+                        <div class="project-image">
+                            <div class="project-placeholder bg-dark">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-category">System Programming</span>
+                            <h3>Custom Virtual Memory Manager</h3>
+                            <p>A specialized virtual memory management system for high-performance computing applications.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="ai">
+                    <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="200">
+                        <div class="project-image">
+                            <div class="project-placeholder bg-dark">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-category">AI / Computer Vision</span>
+                            <h3>Real-time Object Detection</h3>
+                            <p>Efficient object detection system using custom-designed neural network architecture for embedded devices.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="compiler">
+                    <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="400">
+                        <div class="project-image">
+                            <div class="project-placeholder bg-dark">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-category">Compiler / Languages</span>
+                            <h3>Domain-specific Language</h3>
+                            <p>A domain-specific language designed for parallel data processing with custom compiler implementation.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 animate-on-scroll" data-animation="fade-up">
+                <a href="#" class="btn btn-outline-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section-padding bg-light-dark">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="animate-on-scroll" data-animation="fade-up">Latest Articles</h2>
+                <div class="underline animate-on-scroll" data-animation="width-expand" data-delay="200"></div>
+                <p class="text-muted animate-on-scroll" data-animation="fade-up" data-delay="300">Thoughts and insights on AI, compiler engineering, and more</p>
+            </div>
+            <div class="row" id="medium-posts">
+                <!-- Medium posts will be populated here via JavaScript -->
+                <div class="col-12 text-center" id="loading-posts">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-2">Loading latest articles...</p>
+                </div>
+            </div>
+            <div class="text-center mt-4 animate-on-scroll" data-animation="fade-up">
+                <a href="https://medium.com/@sdgunaa" target="_blank" class="btn btn-outline-primary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="animate-on-scroll" data-animation="fade-up">Get In Touch</h2>
+                <div class="underline animate-on-scroll" data-animation="width-expand" data-delay="200"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll" data-animation="fade-right">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Let's discuss how we can collaborate on exciting projects or research opportunities.</p>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>sdgunaseker@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Chennai, India</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>Social Profiles</h4>
+                                <div class="social-links">
+                                    <a href="https://github.com/sdgunaa" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/sdgunaa" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://x.com/sdgunaa" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://medium.com/@sdgunaa" target="_blank"><i class="fab fa-medium-m"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll" data-animation="fade-left">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                        <div class="form-message mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-info">
+                        <h3>Gunasekar</h3>
+                        <p>Computer Science Engineer | AI & Compiler Enthusiast</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-links">
+                        <nav>
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#blog">Blog</a>
+                            <a href="#contact">Contact</a>
+                        </nav>
+                        <div class="social-links mt-3">
+                            <a href="https://github.com/sdgunaa" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/sdgunaa" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/sdgunaa" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://medium.com/@sdgunaa" target="_blank"><i class="fab fa-medium-m"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Gunasekar. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary rounded-circle" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/medium-api.js"></script>
+    <script src="js/theme-toggle.js"></script>
 </body>
 </html>
